@@ -90,13 +90,13 @@ export default function CheckoutPage() {
             </linearGradient>
           </defs>
           <path
-            d="M0,0 H430 V190 C 330,250 260,150 215,190 C 150,240 80,150 0,210 Z"
+            d="M0,0 H430 V190 C 340,140 300,140 215,190 C 130,240 90,240 0,190 Z"
             fill="url(#crimson)"
           />
         </svg>
 
         {/* Cartão de vidro escuro com o logo, sobre a curva */}
-        <div className="absolute left-1/2 -translate-x-1/2 top-[150px] w-[200px] aspect-square rounded-2xl bg-glass backdrop-blur-md shadow-glass border border-white/10 flex items-center justify-center overflow-hidden">
+        <div className="absolute left-1/2 -translate-x-1/2 top-[130px] w-[200px] aspect-square rounded-2xl bg-glass backdrop-blur-md shadow-glass border border-white/10 flex items-center justify-center overflow-hidden">
           {config.logo_url ? (
             <Image
               src={config.logo_url}
@@ -160,7 +160,7 @@ export default function CheckoutPage() {
         </div>
       </div>
 
-      <footer className="bg-ink text-white/70 text-xs leading-relaxed px-6 py-6">
+      <footer className="bg-neutral-600 text-white/70 text-xs leading-relaxed px-6 py-6">
         {config.footer_text}
       </footer>
     </main>
@@ -196,3 +196,4 @@ function Field({
     </label>
   );
 }
+
